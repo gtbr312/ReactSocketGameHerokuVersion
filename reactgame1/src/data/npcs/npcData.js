@@ -1,0 +1,8 @@
+
+export const npcData = [
+    {id:'npc1',playerType:'NPC',tickActions:[1,1,1,1,0,0,1,0],tickAttacks:[1,0,0,0,0,0,0,0],currentMap:'spawnSite',position:[2,3],direction:'SOUTH',stepsIndex:5,spriteLocation:[5,0],movementType:'random',skills:[10,1,1,1],status:'default',focus:null, aggression:'defensive'},
+    {id:'npc2',playerType:'NPC',tickActions:[1,0,1,0,1,0,1,0],tickAttacks:[1,0,0,0,0,0,0,0],currentMap:'spawnSite',position:[8,6],direction:'SOUTH',stepsIndex:5,spriteLocation:[5,0],movementType:'circularScript', script:[1,2,0,3], scriptIndex:0,skills:[10,1,1,1],status:'default',focus:null,aggression:'defensive'},
+    {id:'verticalWalkerForest1',playerType:'NPC',tickActions:[1,1,1,1,1,1,1,1],tickAttacks:[1,1,1,1,1,1,1,1],currentMap:'woods',position:[18,1],direction:'SOUTH',stepsIndex:5,spriteLocation:[5,0],movementType:'circularScript', script:[1,1,1,1,1,1,1,0,0,0,0,0,0,0], scriptIndex:0,skills:[10,1,1,1],status:'default',focus:null,aggression:'aggressive'},
+    {id:'horizontalWalkerForest1',playerType:'NPC',tickActions:[1,1,1,1,1,1,1,1],tickAttacks:[1,0,0,0,0,0,0,0],currentMap:'woods',position:[17,8],direction:'SOUTH',stepsIndex:5,spriteLocation:[5,0],movementType:'circularScript', script:[2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3], scriptIndex:0,skills:[10,1,1,1],status:'default',focus:null,aggression:'aggressive'},
+    {id:'campWalker',playerType:'NPC',tickActions:[1,0,0,0,0,0,0,0],tickAttacks:[1,0,0,0,0,0,0,0],currentMap:'camp',position:[10,5],direction:'SOUTH',stepsIndex:5,spriteLocation:[5,0],movementType:'random',skills:[10,1,1,1],status:'default',focus:null,aggression:'defensive'},
+ ]

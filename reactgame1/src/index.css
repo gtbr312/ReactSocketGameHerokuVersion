@@ -1,0 +1,7 @@
+
+/*Remember that my playershell rendering is absolute. If I add a margin here add it to config values so that it will scale w/o breaking*/
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background-color: lightslategray;
+}

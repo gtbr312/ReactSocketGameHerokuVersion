@@ -1,0 +1,153 @@
+
+.tile {
+
+    color:green;
+    background-size: 100% 100%;
+}
+
+.map_container{
+    display: grid;
+    grid-template-rows: repeat(10,10%);
+    grid-template-columns: repeat(20,5%);
+    background-color: lightsalmon;
+    border-style: solid;
+    border-width:10;
+    border-color: burlywood;
+}
+
+
+.player{
+    background-image:url('../player/player_walk.png');
+    
+}
+.grass {
+    align-content: stretch;
+    background-color: lightgreen;
+    background-image: url('../../tiles/grass.png'), url('../../tiles/grass.png');
+}
+
+.wooden_panel{
+    background-image: url('../../tiles/wooden_panel.png');
+}
+
+.wooden_panel_alt{
+    background-image: url('../../tiles/wooden_panel_alt.png');
+}
+
+.rock {
+    background-color: lightgreen;
+    background-image: url('../../tiles/rock1.png'), url('../../tiles/grass.png');
+}
+
+.tree {
+    background-color: lightgreen;
+    background-image: url('../../tiles/tree2.png'), url('../../tiles/grass.png');
+}
+
+.portal {
+    background-color: lightgreen;
+    background-image: url('../../tiles/portal.png'), url('../../tiles/grass.png');
+}
+
+.sign {
+    background-color: darkkhaki;
+    background-image: url('../../tiles/sign.png'), url('../../tiles/grass.png');
+}
+
+.chest {
+    background-color: darkkhaki;
+    background-image: url('../../tiles/chest_closed.png'), url('../../tiles/grass.png');
+}
+
+.chest_open {
+    background-color: darkkhaki;
+    background-image: url('../../tiles/chest_open.png'), url('../../tiles/grass.png');
+}
+
+.golden_chest {
+    background-color: darkkhaki;
+    background-image: url('../../tiles/chest_closed.png'), url('../../tiles/grass.png');
+}
+
+.golden_chest_open {
+    background-color: darkkhaki;
+    background-image: url('../../tiles/chest_open.png'), url('../../tiles/grass.png');
+}
+
+
+.chest_open_stone {
+    background-color: darkkhaki;
+    background-image: url('../../tiles/chest_open.png'), url('../../tiles/stone.jpg');
+}
+
+.trap_stone_open{
+    background-image: url('../../tiles/trap_open_stone.png'), url('../../tiles/stone.jpg');
+}
+
+.gate {
+    background-image: url('../../tiles/gate.png'), url('../../tiles/grass.png');
+}
+
+.gate_open {
+    background-image: url('../../tiles/gate_open.png'), url('../../tiles/grass.png');
+}
+
+.golden_key{
+    background-image: url('../../tiles/GoldKey.png'), url('../../tiles/stone.jpg');
+}
+
+.water {
+    background-image: url('../../tiles/water.png');
+}
+
+.bush1{
+    background-image: url('../../tiles/bush1.png'), url('../../tiles/grass.png');    
+}
+
+.berry_bush{
+    background-image: url('../../tiles/berryBush.png'), url('../../tiles/grass.png');    
+}
+
+.pressure_plate{
+    background-image: url('../../tiles/pressure_plate.png');
+}
+
+.weighted_pressure_plate{
+    background-image: url('../../tiles/weight.png'), url('../../tiles/pressure_plate.png');
+}
+
+.stone{
+    background-image: url('../../tiles/stone.jpg');
+}
+
+.trap_stone{
+    background-image: url('../../tiles/chest_closed.png'), url('../../tiles/stone.jpg');
+}
+
+.campfire{
+    background-image: url('../../tiles/campfire.png'), url('../../tiles/grass.png');
+}
+
+.pillar{
+    background-image: url('../../tiles/pillar.png'), url('../../tiles/grass.png');
+}
+
+.tent1{
+    background-image: url('../../tiles/tent1.png'), url('../../tiles/grass.png');   
+}
+
+.npc1{
+    background-image: url('../../tiles/npc1.png'), url('../../tiles/grass.png');   
+}
+
+.npc2{
+    background-image: url('../../tiles/npc2.png'), url('../../tiles/grass.png');   
+}
+
+.spookytree{
+    background-image: url('../../tiles/spookytree.png'), url('../../tiles/grass.png');   
+}
+
+.canoe{
+    background-image: url('../../tiles/canoe.png'), url('../../tiles/water.png');
+}
