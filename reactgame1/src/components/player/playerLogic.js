@@ -5,7 +5,7 @@ import { mapSwitch } from './playerLogicServices/mapSwitch'
 import { spriteIndexToPixels, indexToPixels, cleanPos, newPlayerPosition, setSpriteLocation, setWalkIndex, attemptLocation } from './playerLogicServices/playerUnitConversion'
 import { identifyInteractable, identifyPortal, notTelePort, notPlayerShell } from './playerLogicServices/mapInteractionLogic'
 import { checkMapEdges } from './playerLogicServices/playerMovementLogic'
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 3000
 let socket=io(PORT)
 
 socket.on('distributeMapChanges',({mapChanges,currentMap}) => {

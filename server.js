@@ -12,7 +12,11 @@ const io = socketio(server)
 
 const path = require('path')
 
-//if(process.env.NODE_ENV === 'production'){
+
+//if running locally, npm start in root and in reactgame1 then navigate to localhost:3000. 
+//if deploying, only port 5000
+
+//if(process.env.NODE_ENV === 'production'){ 
     app.use(express.static(path.join(__dirname, 'reactgame1/build')))
 //}
 

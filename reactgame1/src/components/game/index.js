@@ -13,7 +13,7 @@ import TextHUD from '../HUD_Features/textHUD'
 
 import dispatchMap, { completeMapsObj } from './dispatchMap'
 import {npcData} from '../../data/npcs/npcData'
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 3000
 const socket=io(PORT)
 
 
