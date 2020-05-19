@@ -7,7 +7,6 @@
     "start": "node server.js",
     "startServer": "nodemon server.js",
     "build": "cd../reactgame1 && npm run build",
-    "install-client": "cd../reactgame1 && npm install",
     "heroku-postbuild": "cd reactgame1 && npm install && npm run build"
   },
   "author": "",

@@ -10,9 +10,11 @@ const router = require('./router')
 const server = http.createServer(app)
 const io = socketio(server)
 
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('../reactgame1/build'))
-}
+const path = require('path')
+
+//if(process.env.NODE_ENV === 'production'){
+    app.use(express.static(path.join(__dirname, 'reactgame1/build')))
+//}
 
 let userCount = 0
 let userList = []
@@ -471,6 +473,9 @@ io.on('connection', function(socket){
 
 })
 
-app.use(router)
+//app.use(router)
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/reactgame1/build/index.html'))
+  })
 
 server.listen(PORT, () => console.log(`Server running on ${PORT}`))
