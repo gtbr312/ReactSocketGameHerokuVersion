@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Player from '../player'
 
 import {ENDPOINT} from '../../config/miscData'
+import {PORT} from '../../../../server'
 import io from 'socket.io-client'
 
 import { connect } from 'react-redux'
@@ -13,7 +14,7 @@ import TextHUD from '../HUD_Features/textHUD'
 import dispatchMap, { completeMapsObj } from './dispatchMap'
 import {npcData} from '../../data/npcs/npcData'
 
-const socket=io(ENDPOINT)
+const socket=io(PORT)
 
 
 

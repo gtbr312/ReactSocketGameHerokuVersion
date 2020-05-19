@@ -1,11 +1,12 @@
 import store from '../../config/store'
 import {PLAYER_SPRITE_SIZE, ENDPOINT} from '../../config/miscData'
+import {PORT} from '../../../../server'
 import io from 'socket.io-client'
 import { mapSwitch } from './playerLogicServices/mapSwitch'
 import { spriteIndexToPixels, indexToPixels, cleanPos, newPlayerPosition, setSpriteLocation, setWalkIndex, attemptLocation } from './playerLogicServices/playerUnitConversion'
 import { identifyInteractable, identifyPortal, notTelePort, notPlayerShell } from './playerLogicServices/mapInteractionLogic'
 import { checkMapEdges } from './playerLogicServices/playerMovementLogic'
-let socket=io(ENDPOINT)
+let socket=io(PORT)
 
 socket.on('distributeMapChanges',({mapChanges,currentMap}) => {
     if(mapChanges[0]&&currentMap === store.getState().map.currentMap){
