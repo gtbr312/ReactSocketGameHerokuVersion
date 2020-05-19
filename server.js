@@ -363,6 +363,9 @@ io.on('connection', function(socket){
     socket.on('pushCombatInteraction',({playerUser,otherUser})=>{
         let foundAttacker = userList.find(userObj => userObj.id === playerUser.id)
         let foundAttacked = userList.find(userObj => userObj.id === otherUser.id)
+
+        if(foundAttacked){
+
         let attackValue = calculateAttack(foundAttacker.skills,foundAttacked.skills)
         foundAttacked.skills[0] = foundAttacked.skills[0] - attackValue
         if(foundAttacked.skills[0] <=0){
@@ -386,7 +389,7 @@ io.on('connection', function(socket){
             }
         })
         io.emit('distributePlayerStates',userList)
-
+        }
     })
 
     socket.on('changeMap',({id,newMap,currentMap})=>{
