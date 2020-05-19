@@ -2,7 +2,7 @@ const express = require('express')
 const socketio = require('socket.io')
 const http = require('http')
 
-export const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 const app = express()
 const router = require('./router')
