@@ -13,7 +13,8 @@ import TextHUD from '../HUD_Features/textHUD'
 
 import dispatchMap, { completeMapsObj } from './dispatchMap'
 import {npcData} from '../../data/npcs/npcData'
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT //|| 3000
+console.log('game Port', PORT)
 const socket=io(PORT)
 
 
